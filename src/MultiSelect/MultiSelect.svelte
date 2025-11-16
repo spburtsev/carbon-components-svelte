@@ -325,14 +325,14 @@
   class:bx--list-box__wrapper--inline={inline}
   class:bx--multi-select__wrapper--inline--invalid={inline && invalid}
 >
-  {#if labelText || $$slots.labelText}
+  {#if labelText || $$slots.labelChildren}
     <label
       for={id}
       class:bx--label={true}
       class:bx--label--disabled={disabled}
       class:bx--visually-hidden={hideLabel}
     >
-      <slot name="labelText">
+      <slot name="labelChildren">
         {labelText}
       </slot>
     </label>
