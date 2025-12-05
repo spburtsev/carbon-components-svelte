@@ -24,7 +24,7 @@
    * @example
    * ```svelte
    * <ContextMenuOption>
-   *   <span slot="labelText">Custom Label</span>
+   *   <span slot="labelChildren">Custom Label</span>
    * </ContextMenuOption>
    * ```
    */
@@ -380,7 +380,7 @@
         </div>
       {/if}
       <span class:bx--menu-option__label={true} title={labelText}>
-        <slot name="labelText">{labelText}</slot>
+        <slot name="labelChildren">{labelText}</slot>
       </span>
       <div class:bx--menu-option__info={true}><CaretRight /></div>
     </div>
@@ -406,7 +406,7 @@
         </div>
       {/if}
       <span class:bx--menu-option__label={true} title={labelText}>
-        <slot name="labelText">{labelText}</slot>
+        <slot name="labelChildren">{labelText}</slot>
       </span>
       <div class:bx--menu-option__info={true}>
         <slot name="shortcutText">{shortcutText}</slot>

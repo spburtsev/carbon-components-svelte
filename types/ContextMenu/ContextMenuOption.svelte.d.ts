@@ -35,7 +35,7 @@ type $Props = {
    * @example
    * ```svelte
    * <ContextMenuOption>
-   *   <span slot="labelText">Custom Label</span>
+   *   <span slot="labelChildren">Custom Label</span>
    * </ContextMenuOption>
    * ```
    * @default ""
@@ -96,7 +96,7 @@ export default class ContextMenuOption extends SvelteComponentTyped<
   },
   {
     icon: Record<string, never>;
-    labelText: Record<string, never>;
+    labelChildren: Record<string, never>;
     default: Record<string, never>;
     shortcutText: Record<string, never>;
   }
