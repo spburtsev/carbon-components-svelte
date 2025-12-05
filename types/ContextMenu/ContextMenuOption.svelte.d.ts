@@ -31,7 +31,7 @@ type $Props = {
 
   /**
    * Specify the label text.
-   * Alternatively, use the "labelText" slot.
+   * Alternatively, use the "labelChildren" slot.
    * @example
    * ```svelte
    * <ContextMenuOption>
